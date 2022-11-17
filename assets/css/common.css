@@ -10,12 +10,60 @@ html, body {
 
 ul, li {
   list-style: none;
+  padding: unset;
+  margin: unset;
 }
 
 a {
   display: block;
   color: #403D3D;
   text-decoration: none;
+}
+
+a:hover {
+  color: unset;
+}
+
+.inner_container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+h1.main_title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+h2.sec_title {
+  font-size: 38px;
+  font-weight: 700;
+  margin: unset;
+}
+
+p.sub_title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.icon_txt p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container-fluid {
+  padding: unset;
+}
+
+.build_img_box, .icon_txt {
+  text-align: center;
+}
+
+.section_gap {
+  padding-top: 100px;
+}
+
+figure {
+  margin: unset;
 }
 
 @font-face {
