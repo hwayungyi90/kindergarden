@@ -34,18 +34,11 @@ ul{list-style: none;}
   margin-top: 27px;
 }
 
+/* 여기부터 부트스트랩 */
+
 .intro{
-  margin-top: 158px;
-}
-
-.intro_wrap{
-  display: flex;
-}
-
-.intro_text_wrap{
-  max-width: 567px;
-  width: 100%;
-}
+  margin-top: 150px;
+} 
 
 .intro_txt{
   font-weight: 500;
@@ -57,6 +50,7 @@ ul{list-style: none;}
   max-width: 186px;
   text-align: center;
   font-size: 18px;
+  margin-top: 10px;
 }
 
 .intro_txt .happy_green_txt{
@@ -67,39 +61,28 @@ ul{list-style: none;}
 
 .intro_txt .happy_txt{
   font-size: 32px;
-}
+} 
 
-/*  */
-.intro_list_wrap{
-  max-width: 1113px;
-}
-
-.intro_list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.intro_list li{
+.intro_list .list{
   position: relative;
-  width: calc(50% - 10px);
+  margin: 10px;
+  width: calc(50% - 20px);
 }
 
-.intro_list > li img {
+.intro_list .list img{
   width: 100%;
 }
 
-.intro_list li::after{
+.intro_list .list::after{
   position: absolute;
   content: "";
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0px;
   background-color: rgba(68, 68, 68, 0.3);
   border-radius: 10px;
-}
+}  
 
 .intro_list .img_txt{
   position: absolute;
@@ -109,10 +92,10 @@ ul{list-style: none;}
   font-size: 48px;
   font-weight: 500;
   color: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
-.intro_list li:hover::after{
+.intro_list .list:hover::after{
   position: absolute;
   content: "";
   top: 0; 
@@ -123,4 +106,50 @@ ul{list-style: none;}
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.5s;
+} 
+
+
+.intro_list .row>*{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.intro_list .row{
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1024px){
+  .intro{
+    margin-top: 120px;
+  } 
+
+  .intro_list .img_txt{
+  font-size: 32px;
+  }
+
+  .intro_txt .happy_green_txt{
+    font-size: 32px;
+  }
+
+  .intro_txt .happy_txt{
+    font-size: 21px;
+  }
+
+  .intro_txt .happy_btn{
+    max-width: 124px;
+    font-size: 12px;
+  }
+
+  .intro_list .list{
+  margin: 5px;
+  width: calc(50% - 15px);
+  }
+}
+
+@media screen and (max-width: 767px){
+  .intro_list .list{
+    width: 100%;
+  }
 }
