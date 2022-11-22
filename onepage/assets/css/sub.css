@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+
+
+.main_banner{
+  background-image: url(../images/main.png);
+  background-size: cover;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.main_banner::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
+.main_text_box{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.intro_main_tit{
+  padding-top: 200px;
+}
+
+.intro_sub_tit{
+  margin-top: 27px;
+}
+
+.intro{
+  margin-top: 158px;
+}
+
+.intro_wrap{
+  display: flex;
+}
+
+.intro_text_wrap{
+  max-width: 567px;
+  width: 100%;
+}
+
+.intro_txt{
+  font-weight: 500;
+}
+
+.intro_txt .happy_btn{
+  border: 1px solid #403D3D;
+  border-radius: 300px;
+  max-width: 186px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.intro_txt .happy_green_txt{
+  margin-top: 20px;
+  font-size: 48px;
+  color: #66CC66;
+}
+
+.intro_txt .happy_txt{
+  font-size: 32px;
+}
+
+/*  */
+.intro_list_wrap{
+  max-width: 1113px;
+}
+
+.intro_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.intro_list li{
+  position: relative;
+  width: calc(50% - 10px);
+}
+
+.intro_list > li img {
+  width: 100%;
+}
+
+.intro_list li::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.3);
+  border-radius: 10px;
+}
+
+.intro_list .img_txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  z-index: 10;
+}
+
+.intro_list li:hover::after{
+  position: absolute;
+  content: "";
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.77);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
