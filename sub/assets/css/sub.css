@@ -1,6 +1,10 @@
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 
+.wrap{
+  width: 100%;
+  overflow: hidden;
+}
 
 .main_banner{
   background-image: url(../images/main.png);
@@ -191,4 +195,17 @@ ul{list-style: none;}
 
 .growth{
   width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+  .creative_btn{
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px){
+ .growth{
+    margin-top: 40px;
+  }
 }

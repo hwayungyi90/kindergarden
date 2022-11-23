@@ -58,6 +58,10 @@ p.sec_sub_tit{
   font-size: 14px;
   font-weight: 500;
   }
+
+  p.sec_sub_tit{
+  font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767px){
@@ -69,8 +73,5 @@ p.sec_sub_tit{
   font-size: 28px;
   }
 
-  h2.sec_tit{
-  font-size: 26px;
-  }
 
 }
