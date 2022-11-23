@@ -11,6 +11,8 @@ ul{list-style: none;}
   background-size: cover;
   padding-bottom: 200px;
   position: relative;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .main_banner::after{
@@ -159,6 +161,8 @@ ul{list-style: none;}
   background-size: cover;
   padding-bottom: 200px;
   position: relative;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .creative_main_banner::after{
@@ -205,7 +209,84 @@ ul{list-style: none;}
 }
 
 @media screen and (max-width: 767px){
- .growth{
+  .growth{
     margin-top: 40px;
+  }
+}
+
+/* 여기부터 아카데미센터 */
+
+
+.center_main_banner{
+  background-image: url(../images/main3.png);
+  background-size: cover;
+  padding-bottom: 200px;
+  position: relative;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.center_main_banner::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
+.center_main_text_box{
+  position: relative;
+  z-index: 30;
+}
+
+.center_btn{
+  padding-top: 115px;
+  padding-bottom: 62px;
+}
+.center_btn .guide{
+  max-width: 186px;
+  border: 1px solid #000;
+  border-radius: 300px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.academy_txt{
+  margin-top: 30px;
+  padding-bottom: 130px;
+}
+
+.center img{
+  width: 100%;
+}
+
+.center .row .col-xl-4{
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1024px){
+  .center_btn{
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .academy_txt{
+    margin-top: 20px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .center_btn{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .academy_txt{
+    padding-bottom: 50px;
   }
 }
