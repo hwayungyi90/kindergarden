@@ -66,6 +66,8 @@
 .main_visual__section {
   background: url("../../assets/images/visual_img.png") no-repeat;
   padding: 159px 0 468px;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .main_visual__section .main_title {
