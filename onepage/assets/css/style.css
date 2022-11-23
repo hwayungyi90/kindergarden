@@ -9,6 +9,14 @@
   justify-content: center;
 }
 
+.main_menu .tab_menu {
+  display: none;
+}
+
+.main_menu .ghost_list {
+  display: none;
+}
+
 .main_menu .menu_gnb li {
   margin-right: 70px;
   font-size: 20px;
@@ -134,6 +142,10 @@
   margin-top: 10px;
 }
 
+.kindergarden__facility .container-fluid .first_col img {
+  width: 100%;
+}
+
 .kindergarden__facility .container-fluid .sec-col {
   display: flex;
   align-items:center;
@@ -211,6 +223,10 @@
   background-color: #EFC12D;
 }
 
+.kindergarden__life .container-fluid figure img {
+  width: 100%;
+}
+
 .kindergarden__life .container-fluid .life_txt_box {
   text-align: center;
 }
@@ -252,14 +268,80 @@
 }
 
 
-/* footer */
-footer {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #D9D9D9;
-  margin-top: 100px;
-}
+@media screen and (max-width:1023px) {
+  /* 메인 메뉴 */
+  .main_menu {
+    padding: 20px 0;
+  }
+  
+  .main_menu .menu_gnb {
+    display: none;
+  }
 
-footer .inner_container p {
-  margin-bottom: 0;
+  .main_menu .tab_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #ghost_menu {
+    display: none;
+  }
+  
+  #ghost_menu + label {
+    display: block;
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  label span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  label span:first-child {
+    top: 0;
+  }
+
+  label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  label span:last-child {
+    bottom: 0;
+  }
+
+  input:checked + label span:first-child {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  input:checked + label span:nth-child(2) {
+    display: none;
+  }
+
+  input:checked + label span:last-child {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  /* 메인 비주얼 영역 */
+  .main_visual__section {
+    background: url("../../assets/images/visual_img.png") no-repeat;
+    background-size: cover;
+    padding: 159px 0 468px;
+    width: 100vw;
+  }
+
+  .main_visual__section .main_title {
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
 }

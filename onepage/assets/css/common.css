@@ -27,6 +27,14 @@ a:hover {
 .inner_container {
   max-width: 1680px;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 32px;
+}
+
+@media screen and (max-width:767px) {
+  .inner_container {
+    padding: 0 20px;
+  }
 }
 
 h1.main_title {
@@ -37,6 +45,10 @@ h1.main_title {
 h2.sec_title {
   font-size: 38px;
   font-weight: 700;
+  margin: unset;
+}
+
+p {
   margin: unset;
 }
 
@@ -64,6 +76,18 @@ p.sub_title {
 
 figure {
   margin: unset;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #D9D9D9;
+  margin-top: 100px;
+}
+
+footer .inner_container p {
+  margin-bottom: 0;
 }
 
 @font-face {
