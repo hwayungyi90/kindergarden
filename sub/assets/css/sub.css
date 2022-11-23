@@ -116,7 +116,18 @@ ul{list-style: none;}
   margin-left: 0;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px) and (max-width: 1310px){
+  .intro_txt .happy_green_txt {
+  font-size: 37px;
+  }
+
+  .intro_txt .happy_txt{
+  font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 1023px){
   .intro{
     margin-top: 120px;
   } 
@@ -143,6 +154,17 @@ ul{list-style: none;}
   width: calc(50% - 15px);
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+  .intro_txt .happy_green_txt {
+  font-size: 26px;
+  }
+
+  .intro_txt .happy_txt{
+  font-size: 18px;
+  }
+}
+
 
 @media screen and (max-width: 767px){
   .intro{
@@ -193,7 +215,7 @@ ul{list-style: none;}
   margin: 0 auto;
 }
 
-.Creative_s_txt{
+.creative_s_txt{
   margin-top: 30px;
 }
 
@@ -201,7 +223,17 @@ ul{list-style: none;}
   width: 100%;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px) and (max-width: 1290px){
+  h2.sec_tit {
+  font-size: 40px;
+  }
+
+  p.creative_s_txt{
+  font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1023px){
   .creative_btn{
     padding-top: 80px;
     padding-bottom: 40px;
@@ -212,6 +244,7 @@ ul{list-style: none;}
   .growth{
     margin-top: 40px;
   }
+
 }
 
 /* 여기부터 아카데미센터 */
