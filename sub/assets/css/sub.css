@@ -20,18 +20,8 @@ ul{list-style: none;}
 }
 
 .main_text_box{
-  color: #fff;
-  text-align: center;
   position: relative;
   z-index: 10;
-}
-
-.intro_main_tit{
-  padding-top: 200px;
-}
-
-.intro_sub_tit{
-  margin-top: 27px;
 }
 
 /* 여기부터 부트스트랩 */
@@ -177,6 +167,8 @@ ul{list-style: none;}
   background-color: rgba(68, 68, 68, 0.3);
 }
 
-.cre_main_tit{
-  padding-top: 110px;
+.cre_main_text_box{
+  position: relative;
+  z-index: 10;
 }
+
