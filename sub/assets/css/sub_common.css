@@ -34,7 +34,7 @@ p.main_sub_tit{
   margin-top: 27px;
 }
 
-p.sec_sub_tit{
+p.desc{
   font-size: 20px;
   font-weight: 500;
 }
@@ -59,7 +59,7 @@ p.sec_sub_tit{
   font-weight: 500;
   }
 
-  p.sec_sub_tit{
+  p.desc{
   font-size: 14px;
   }
 }
@@ -72,6 +72,4 @@ p.sec_sub_tit{
   h1.s_main_tit{
   font-size: 28px;
   }
-
-
 }
