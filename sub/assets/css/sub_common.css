@@ -8,6 +8,7 @@ h1.main_tit{
   font-size: 64px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
 
 h2.sec_tit{
@@ -19,6 +20,7 @@ p.main_sub_tit{
   font-size: 22px;
   font-weight: 500;
   color: #fff;
+  text-align: center;
 }
 
 p.sec_sub_tit{
