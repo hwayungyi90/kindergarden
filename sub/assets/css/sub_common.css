@@ -50,7 +50,11 @@ p.sec_sub_tit{
   font-weight: 700;
   }
 
-p.main_sub_tit{
+  h2.sec_tit{
+  font-size: 40px;
+  }
+
+  p.main_sub_tit{
   font-size: 14px;
   font-weight: 500;
   }
@@ -63,6 +67,10 @@ p.main_sub_tit{
 
   h1.s_main_tit{
   font-size: 28px;
+  }
+
+  h2.sec_tit{
+  font-size: 26px;
   }
 
 }
