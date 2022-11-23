@@ -169,6 +169,22 @@ ul{list-style: none;}
 
 .cre_main_text_box{
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 
+.creative_btn{
+  padding-top: 115px;
+  padding-bottom: 62px;
+}
+.creative_btn .hi{
+  max-width: 186px;
+  border: 1px solid #000;
+  border-radius: 300px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Creative_s_txt{
+  margin-top: 30px;
+}
