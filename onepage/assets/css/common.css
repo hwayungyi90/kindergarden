@@ -84,6 +84,31 @@ figure {
   margin: unset;
 }
 
+@media screen and (max-width: 1023px) {
+  h2.sec_title {
+    font-size: 30px;
+  }
+  
+  p.sub_title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h2.sec_title {
+    font-size: 22px;
+  }
+  
+  p.sub_title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .icon_txt p {
+    font-size: 20px;
+  }
+}
+
 /* footer */
 footer {
   text-align: center;
