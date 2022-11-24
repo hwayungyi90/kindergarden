@@ -5,6 +5,7 @@ window.onload = function () {
   console.log(hiddenM);
   var whole = document.querySelector("html, body");
   console.log(whole);
+  var mobileM = document.querySelectorAll(".mob")
 
   let subToggle = true;
   hamBtn.addEventListener("click", function (e) {
@@ -18,4 +19,12 @@ window.onload = function () {
     }
     subToggle = !subToggle;
   })
+
+  for (let i = 0; i < mobileM.length; i++) {
+    mobileM[i].addEventListener("click", function () {
+      hiddenM.style.setProperty('right', '-300px');
+      whole.style.setProperty('overflow-y', 'visible');
+    })
+    subToggle = !subToggle;
+  }
 }
