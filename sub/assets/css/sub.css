@@ -289,7 +289,7 @@ ul{list-style: none;}
 
 .academy_txt{
   margin-top: 30px;
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .center img{
@@ -321,5 +321,234 @@ ul{list-style: none;}
 
   .academy_txt{
     padding-bottom: 50px;
+  }
+}
+
+/* 여기부터 입학안내 */
+
+
+.entr_main_banner{
+  background-image: url(../images/entrance_main.png);
+  background-size: cover;
+  padding-bottom: 200px;
+  position: relative;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.entr_main_banner::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
+.entr_main_text_box{
+  position: relative;
+  z-index: 30;
+}
+
+.entr_btn{
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+.entr_btn .entr{
+  max-width: 186px;
+  border: 1px solid #000;
+  border-radius: 300px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.s_entr_txt{
+  margin-top: 30px;
+  padding-bottom: 120px;
+}
+
+.notice_txt{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.day{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  border: 1px solid #D9D9D9;
+  height: 240px;
+}
+
+@media screen and (max-width: 1024px){
+  .center_btn{
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  
+  .s_entr_txt{
+  margin-top: 20px;
+  padding-bottom: 80px;
+  }
+
+  .notice_txt{
+  font-size: 16px;
+  padding: 10px 0;
+  }
+
+  .day{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  height: 160px;
+  }
+}
+
+
+
+/* 여기부터 오시는길 */
+
+.guide_main_banner{
+  background-image: url(../images/main5.png);
+  background-size: cover;
+  padding-bottom: 200px;
+  position: relative;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.guide_main_banner::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
+.guide_main_text_box{
+  position: relative;
+  z-index: 30;
+}
+
+.guide_btn{
+  padding-top: 115px;
+  padding-bottom: 62px;
+}
+.guide_btn .guide_txt{
+  max-width: 186px;
+  border: 1px solid #000;
+  border-radius: 300px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* 여기부터 원생활 */
+
+.main_wrap img, .train_list img{
+  width: 100%;
+}
+
+.title_wrap{
+  width: 100%;
+  padding-top:12%;
+}
+
+.live_main_tit{
+  font-size: 64px;
+  font-weight: 700px;
+  color: #403D3D;
+  /* margin-top: 60px; */
+}
+
+.live_sub_tit{
+  font-size: 22px;
+  font-weight: 500;
+  color: #403D3D;
+  margin-top: 30px;
+}
+
+.train_list{
+  padding-top: 120px;
+}
+
+.train_tit{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.train_txt{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.solid{
+  border-left: 1px solid #EFC12D;
+  width: 10px;
+  height: 50px;
+  position: relative;
+  left: 50%;
+}
+
+.one{
+  width: 15px;
+  height: 15px;
+  background-color: #EFC12D;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+  .live_main_tit{
+    font-size: 50px;
+    margin-top: 0px;
+  }
+
+  .live_sub_tit{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .live_main_tit{
+    font-size: 42px;
+    margin-top: 0px;
+  }
+
+  .live_sub_tit{
+    font-size: 14px;
+  }
+
+  .train_list{
+    padding-top: 80px;
+  }
+
+  .train_tit{
+    font-size: 16px;
+  }
+
+  
+  .train_txt{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .train_txt{
+    margin-bottom: 50px;
   }
 }
