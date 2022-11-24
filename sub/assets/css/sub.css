@@ -1,21 +1,14 @@
-*{margin: 0; padding: 0;}
-ul{list-style: none;}
 
 .wrap{
   width: 100%;
   overflow: hidden;
 }
 
-.main_banner{
-  background-image: url(../images/main.png);
-  background-size: cover;
-  padding-bottom: 200px;
+.swiper-slide{
   position: relative;
-  background-repeat: repeat;
-  background-position: center;
 }
 
-.main_banner::after{
+.swiper-slide::after{
   position: absolute;
   content: "";
   top: 0;
@@ -25,9 +18,37 @@ ul{list-style: none;}
   background-color: rgba(68, 68, 68, 0.3);
 }
 
-.main_text_box{
-  position: relative;
+.swiper-slide img{
+  width: 100%;
+}
+
+.intro_text_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
   z-index: 10;
+}
+
+.intro_main_tit{
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.intro_sub_tit{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active{
+  width: 16px;
+  border-radius: 20px;
 }
 
 /* 여기부터 부트스트랩 */
@@ -116,18 +137,30 @@ ul{list-style: none;}
   margin-left: 0;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1310px){
+@media screen and (min-width: 1024px) and (max-width: 1340px){
   .intro_txt .happy_green_txt {
-  font-size: 37px;
+    font-size: 35px;
   }
 
   .intro_txt .happy_txt{
-  font-size: 25px;
+    font-size: 25px;
+  }
+
+  .intro_list .img_txt{
+    font-size: 32px;
   }
 }
 
 
 @media screen and (max-width: 1023px){
+  .intro_main_tit{
+    font-size: 42px;
+  }
+
+  .intro_sub_tit{
+    font-size: 14px;
+  }
+
   .intro{
     margin-top: 120px;
   } 
@@ -153,6 +186,10 @@ ul{list-style: none;}
   margin: 5px;
   width: calc(50% - 15px);
   }
+
+  .intro_list .img_txt{
+    font-size: 21px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 900px){
@@ -173,6 +210,9 @@ ul{list-style: none;}
 
   .intro_list .list{
     width: 100%;
+  }
+  .intro_list .img_txt{
+    font-size: 48px;
   }
 }
 
@@ -375,6 +415,7 @@ ul{list-style: none;}
   font-weight: 500;
   color: #fff;
   padding: 20px 0;
+  margin-bottom: 0;
 }
 
 .day{
@@ -456,7 +497,7 @@ ul{list-style: none;}
 }
 
 .title_wrap{
-  width: 100%;
+  /* width: 100%; */
   padding-top:12%;
 }
 

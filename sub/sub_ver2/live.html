@@ -4,19 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/sub_common.css" />
-  <link rel="stylesheet" href="./assets/css/sub.css" />
-  <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/sub_common.css">
+  <link rel="stylesheet" href="../assets/css/sub.css">
   <title>원생활</title>
 </head>
 <body>
   <div class="wrap">
+    <header class="main_menu">
+      <div class="inner_container">
+        <div class="menu_bar">
+          <ul class="menu_gnb">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./creative.html">인사말</a></li>
+            <li><a href="./center.html">시설안내</a></li>
+            <li><a href="./live.html">원생활</a></li>
+            <li><a href="./guide.html">오시는길</a></li>
+          </ul>
+          <div class="tab_menu">
+            <div class="logo_img">
+              <p>어린이집 로고</p>
+            </div>
+            <div class="ghost">
+              <div class="ghost_bar">
+                <input type="checkbox" id="ghost_menu">
+                <label for="ghost_menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ghost_list">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./creative.html">인사말</a></li>
+            <li><a href="./center.html">시설안내</a></li>
+            <li><a href="./live.html">원생활</a></li>
+            <li><a href="./guide.html">오시는길</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <div class="live">
       <div class="container-fluid inner_container">
         <div class="row main_wrap">
           <div class="col-md-6 col-sm-12">
-            <img src="./assets/images/main6.png" alt="">
+            <img src="../assets/images/main6.png" alt="">
           </div>
           <div class="col-md-6 col-sm-12 title_wrap">
             <h1 class="live_main_tit">어린이집, <br />행복유치원에서 시작하세요.</h1>
@@ -25,7 +62,7 @@
         </div>
           <div class="row train_list">
             <div class="col-md-4 col-sm-12">
-              <img src="./assets/images/live1.png" alt="">
+              <img src="../assets/images/live1.png" alt="">
               <div class="solid"></div>
               <div class="one"></div>
               <p class="train_tit">맞춤형 교육</p>
@@ -34,7 +71,7 @@
               우리 아이들의 놀이를 책임집니다!</p>
             </div>
             <div class="col-md-4 col-sm-12">
-              <img src="./assets/images/live2.png" alt="">
+              <img src="../assets/images/live2.png" alt="">
               <div class="solid"></div>
               <div class="one"></div>
               <p class="train_tit">맞춤형 교육</p>
@@ -43,7 +80,7 @@
               우리 아이들의 놀이를 책임집니다!</p>
             </div>
             <div class="col-md-4 col-sm-12">
-              <img src="./assets/images/live3.png" alt="">
+              <img src="../assets/images/live3.png" alt="">
               <div class="solid"></div>
               <div class="one"></div>
               <p class="train_tit">맞춤형 교육</p>
@@ -61,5 +98,7 @@
         </div>
     </footer>
   </div>
+  <script src="./assets/js/jquery-3.6.1.min.js"></script>
+  <script src="./assets/js/sub.js"></script>
 </body>
 </html>
