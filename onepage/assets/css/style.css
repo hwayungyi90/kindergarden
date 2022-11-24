@@ -99,6 +99,15 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 
+.swiper .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  border-radius: 20px;
+}
+
 /* 입학안내 영역 */
 .kindergarden__enterance .icon_txt {
   margin: 10px 0 20px;
@@ -319,7 +328,7 @@ body {
     align-items: center;
     font-size: 16px;
   }
-
+  
   #ghost_menu {
     display: none;
   }
@@ -377,7 +386,7 @@ body {
     top: 64px;
     width: 300px;
     height: calc(100vh - 44px);
-    z-index: 1;
+    z-index: 100;
     transition: all 0.5s;
   }
 
@@ -386,7 +395,30 @@ body {
   }
 
   .main_menu .ghost_list ul li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+    .main_menu .ghost_list li a:hover {
+    color: #EFC12D;
+    transition: all 0.5s;
+  }
+
+  .main_menu .ghost_list li a {
+    display: inline-block;
+    position: relative;
+  }
+
+  .main_menu .ghost_list li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #EFC12D;
+  }
+
+  .main_menu .ghost_list li a:hover::after {
+    animation: underline 0.5s;
+    animation-fill-mode: forwards;
   }
 
   /* 메인 비주얼 영역 */
