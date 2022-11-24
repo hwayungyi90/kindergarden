@@ -11,7 +11,7 @@ html, body {
   margin: 0 auto;
   padding: 0 32px;
 }
- 
+
 h1.main_tit{
   font-size: 64px;
   font-weight: 700;
@@ -212,7 +212,7 @@ p.desc{
     transform: translateY(-50%) rotate(-45deg);
   }
 
-  .main_menu .ghost_list {
+.main_menu .ghost_list {
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -221,7 +221,7 @@ p.desc{
     top: 64px;
     width: 300px;
     height: calc(100vh - 44px);
-    z-index: 1;
+    z-index: 100;
     transition: all 0.5s;
   }
 
@@ -230,8 +230,32 @@ p.desc{
   }
 
   .main_menu .ghost_list ul li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
+
+    .main_menu .ghost_list li a:hover {
+    color: #EFC12D;
+    transition: all 0.5s;
+  }
+
+  .main_menu .ghost_list li a {
+    display: inline-block;
+    position: relative;
+  }
+
+  .main_menu .ghost_list li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #EFC12D;
+  }
+
+  .main_menu .ghost_list li a:hover::after {
+    animation: underline 0.5s;
+    animation-fill-mode: forwards;
+  }
+
 }
 
 /* footer */
