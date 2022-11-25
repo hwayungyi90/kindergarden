@@ -26,7 +26,7 @@ body {
 .main_menu .menu_gnb li {
   margin-right: 70px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main_menu .menu_gnb li:last-child {
@@ -103,7 +103,12 @@ body {
   background-color: #fff;
 }
 
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
 .swiper-pagination-bullet-active {
+  transition: all 0.7s;
   width: 16px;
   border-radius: 20px;
 }
@@ -382,20 +387,23 @@ body {
     flex-direction: column;
     background: #fff;
     position: absolute;
-    right: -320px;
+    right: -1000px;
     top: 64px;
-    width: 300px;
+    width: 50%;
     height: calc(100vh - 44px);
     z-index: 100;
     transition: all 0.5s;
+    padding: 44px 0 0 20px;
+    text-align: left;
   }
 
   .main_menu .ghost_list ul {
-    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .main_menu .ghost_list ul li {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
     .main_menu .ghost_list li a:hover {
@@ -421,9 +429,26 @@ body {
     animation-fill-mode: forwards;
   }
 
+  .main_menu .ghost_list .ghost_info_wrap {
+    margin-top: 20px;
+  }
+
+  .main_menu .ghost_list .ghost_info_wrap .info_list_box {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+
+  .main_menu .ghost_list .ghost_info_wrap .info_list_box .info_list {
+    color: #666666;
+  }
+
   /* 메인 비주얼 영역 */
   .main_visual__section .main_title {
     font-size: 34px;
+  }
+
+  .kindergarden__enterance .kindergarden__content .col-lg-4.col-sm-12{
+    margin-bottom: 24px;
   }
 
   .kindergarden__enterance .kindergarden__text__title {
@@ -487,6 +512,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .main_menu .ghost_list {
+    right: -1000px;
+    width: 100%;
+  }
+
   .main_visual__section .main_title {
     font-size: 26px;
   }
