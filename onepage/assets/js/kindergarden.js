@@ -22,9 +22,10 @@ window.onload = function () {
 
   for (let i = 0; i < mobileM.length; i++) {
     mobileM[i].addEventListener("click", function () {
+      hamBtn.checked = false;
       hiddenM.style.setProperty('right', '-300px');
       whole.style.setProperty('overflow-y', 'visible');
+      subToggle = !subToggle;
     })
-    subToggle = !subToggle;
   }
 }
