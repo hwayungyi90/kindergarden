@@ -144,6 +144,21 @@
   margin-left: 0;
 }
 
+.guide1{
+  position: relative;
+}
+
+.guide1 .btn_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.guide1 .btn_box a{
+  display: block;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1340px){
   .intro_txt .happy_green_txt {
     font-size: 35px;
