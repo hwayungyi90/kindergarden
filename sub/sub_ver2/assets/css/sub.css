@@ -144,6 +144,36 @@
   margin-left: 0;
 }
 
+.guide1{
+  position: relative;
+}
+
+.guide1 .btn_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.guide1 .btn_box a{
+  display: block;
+}
+
+.guide2{
+  position: relative;
+}
+
+.guide2 .btn_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.guide2 .btn_box a{
+  display: block;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1340px){
   .intro_txt .happy_green_txt {
     font-size: 35px;
@@ -204,6 +234,10 @@
 
   .intro_list .img_txt{
     font-size: 21px;
+  }
+
+  .intro_text_wrap{
+    margin-left: 5px;
   }
 }
 
