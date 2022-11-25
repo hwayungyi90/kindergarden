@@ -160,6 +160,10 @@
 
 
 @media screen and (max-width: 1023px){
+  .intro .col-md-6{
+    width: 100%;
+  }
+
   .intro_main_tit{
     font-size: 42px;
   }
@@ -445,7 +449,13 @@
   height: 240px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+  p.desc{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1023px){
   .center_btn{
     padding-top: 70px;
     padding-bottom: 40px;
@@ -465,6 +475,12 @@
   padding-top: 60px;
   padding-bottom: 100px;
   height: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 860px){
+  p.desc{
+    font-size: 12px;
   }
 }
 
