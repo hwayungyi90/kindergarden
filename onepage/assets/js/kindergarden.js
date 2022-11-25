@@ -25,5 +25,6 @@ window.onload = function () {
       hiddenM.style.setProperty('right', '-300px');
       whole.style.setProperty('overflow-y', 'visible');
     })
+    subToggle = !subToggle;
   }
 }
